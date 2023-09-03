@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Les 2 - Praktijkoefening</title>
+    </head>
+    <body>
+        <h1>Welkom</h1>
+        <div id="Welkom"></div>
+        
+        <script>
+         
+        const invoer = prompt('Vul uw naam in', 'Naam');
+        const getal1 = prompt('Vul uw geboortejaar in', 'getal1');
+        const getal2 = prompt('Vul het huidige jaar in', 'getal2')
+        const totaal = parseInt(getal2) - parseInt(getal1);
+        const tekst = getal2 + ' - ' + getal1 + ' = ' + totaal;
+        document.getElementById('Welkom').innerHTML = "Leeftijd van bezoeker: " + " " + invoer + " " + tekst + " jaar ";
+        
+        let boodschap = "Leeftijd van bezoeker" + "invoer" + "tekst" + "jaar";
+        const lengte = boodschap.length;
+        console.log(lengte);
+        const positie = boodschap.indexOf('n');
+        console.log(positie)
+        
+        const x = getal1;
+        x === 1980; //true
+        x === 'Welkom'; //false
+        
+        if (x == 1980) {
+        console.log('x is true');
+        }
+        else {
+        console.log('x is false');
+        }
+        </script>
+        </body>
+        </html>
